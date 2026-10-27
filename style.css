@@ -1,0 +1,476 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+body {
+  display: grid;
+  grid-template-columns: 20vw 14vw 15vw 15vw 15vw 20vw;
+  grid-template-rows: 15vh 45vh 45vh 10vh;
+  background-color: brown;
+  background-image: url("Images/Flaaffybackground.jpg");
+  color: white;
+  font-family:
+    Made Tommy,
+    Singsong,
+    Lucida Sans;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  /* margin: 5px; */
+}
+
+h1 {
+  color: white;
+  font-size: 55px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* unvisited link */
+a:link {
+  color: yellow;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(234, 138, 165);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(19, 115, 15);
+}
+
+/* selected link */
+a:active {
+  color: rgb(216, 90, 236);
+}
+
+/* img {
+  width: 350px;
+} */
+
+#IloveAmpharos {
+  color: rgb(173, 92, 5);
+}
+
+.Normaletekst {
+  background-color: aliceblue;
+  font-size: 60px;
+  color: white;
+}
+
+#nav {
+  background-color: rgb(237, 212, 191);
+  background-image: url("Images/Ampharosflower.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#balkonder {
+  background-color: rgb(237, 229, 71);
+  opacity: 0.4;
+  grid-column: 1 / 7;
+  grid-row: 4 / 5;
+  z-index: 0;
+}
+
+#photoleft {
+  /* background-color: blue; */
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: URL("Images/Ampharosgrass.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+#photoleft:hover {
+  opacity: 0.7;
+}
+
+#textmiddle {
+  /* background-color: blueviolet; */
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow:
+    0 0 3px #9a220d,
+    0 0 5px #ffdd00;
+}
+
+#photoright {
+  /* background-color: darkred; */
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+  background-image: URL("Images/Ampharosmareep.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+#photoright:hover {
+  opacity: 0.7;
+}
+
+#storyleft {
+  /* background-color: aqua; */
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+
+  margin: 5px;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px #9a220d;
+}
+
+#photoleft1 {
+  /* background-color: black; */
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background-image: URL("Images/Ampharosmelon.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  border: 10px solid rgb(18, 155, 82);
+}
+
+#photoleft1:hover {
+  opacity: 0.7;
+}
+
+#photoright1 {
+  /* background-color: yellow; */
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+  background-image: URL("Images/Ampharosmega.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  border: 10px solid rgb(230, 91, 60);
+}
+
+#photoright1:hover {
+  opacity: 0.7;
+}
+
+#photomiddle {
+  /* background-color: yellow; */
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+  background-image: URL("Images/Ampharosblep.gif");
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin: 10px;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#storyright {
+  /* background-color: green; */
+  grid-column: 6 / 7;
+  grid-row: 3 / 4;
+
+  margin: 5px;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#pokemonstore {
+  /* background-color: rgb(237, 229, 71); */
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 10px #89acfc;
+
+  z-index: 1;
+}
+
+#pokedex {
+  /* background-color: rgb(237, 229, 71); */
+  grid-column: 3 / 5;
+  grid-row: 4 / 5;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 10px #89acfc;
+
+  z-index: 1;
+}
+
+#nextpage {
+  /* background-color: rgb(237, 229, 71); */
+  grid-column: 6 / 7;
+  grid-row: 4 / 5;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+  justify-content: center;
+  text-shadow: 2px 2px 10px #89acfc;
+
+  z-index: 1;
+}
+
+/*nu begin ik aan de volgende pagina*/
+
+#Amph1 {
+  background-image: url("Images/Energy.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+
+  text-shadow: 2px 2px #dd0000;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeAmph {
+  background-color: rgb(237, 212, 191);
+  background-image: url("Images/Whosthatpokemonsilhouette.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#transbox {
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid black;
+
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+
+  /* flex methode*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.textinbox {
+  color: black;
+  font-size: 30px;
+}
+
+#knop {
+  background-color: #9a220d;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  /* 
+  grid-column: 2 / 6;
+  grid-row: 2 / 3; */
+
+  line-height: 40px;
+  text-align: center;
+  justify-self: start;
+  align-self: start;
+  color: white;
+  font-size: 10px;
+}
+
+#pokemonguess {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pokemonimage {
+  width: 350px;
+  height: auto;
+}
+
+#knop2 {
+  background-image: url("Images/Ampharoscharge.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  justify-content: center;
+  margin: 25px;
+
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px black;
+}
+
+#cards {
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vw;
+  padding: 0 2vw;
+}
+
+.card {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 14vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: auto;
+  max-width: 100%;
+  max-height: calc(45vh - 70px);
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.card:hover img {
+  transform: translateY(-8px) scale(1.04);
+}
+
+.card p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.card.electric:hover img {
+  animation: shock 0.3s infinite;
+  filter: drop-shadow(0 0 15px yellow);
+}
+
+@keyframes shock {
+  0% {
+    transform: translate(0, -10px) scale(1.05);
+  }
+  25% {
+    transform: translate(-5px, -10px) scale(1.05);
+  }
+  50% {
+    transform: translate(5px, -10px) scale(1.05);
+  }
+  75% {
+    transform: translate(-5px, -10px) scale(1.05);
+  }
+  100% {
+    transform: translate(0, -10px) scale(1.05);
+  }
+}
+
+#backtohomepage {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 10px #89acfc;
+  z-index: 1;
+}
+
+#backtohomepage a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f4d63f;
+  font-size: 18px;
+  border: 2px solid #f4d63f;
+  border-radius: 8px;
+  text-shadow: none;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+#backtohomepage a:hover {
+  background-color: #f4d63f;
+  color: black;
+}
